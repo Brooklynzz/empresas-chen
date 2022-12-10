@@ -10,6 +10,7 @@ public class Funcionario {
     private Funcionario funcionario;
     private static int quantidade = 0;
     private boolean autenticado;
+    private int accessLevel;
 
     public Funcionario(String nome, String sobrenome, String cpf) {
         this.nome = nome;
@@ -20,7 +21,7 @@ public class Funcionario {
     public Funcionario() {}
 
     public String getNome() {
-        return nome;
+        return nome + " " + sobrenome;
     }
 
     public void setNome(String nome) {
@@ -67,8 +68,17 @@ public class Funcionario {
         Funcionario.quantidade = quantidade;
     }
 
+    public int getAccessLevel() {
+        return accessLevel;
+    }
+
+    public void setAccessLevel(int accessLevel) {
+        this.accessLevel = accessLevel;
+    }
+
     @Override
     public String toString() {
         return " - " + quantidade;
     }
+
 }

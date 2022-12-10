@@ -55,18 +55,22 @@ public class GeraFuncionario extends Funcionario {
         case 1:
             Diretor f1 = new Diretor(senhaDef);
             f.setFuncionario(f1);
+            f.setAccessLevel(1);
             break;
         case 2:
             Gerente g1 = new Gerente(senhaDef);
             f.setFuncionario(g1);
+            f.setAccessLevel(2);
             break;
         case 3:
             TI t1 = new TI();
             f.setFuncionario(t1);
+            f.setAccessLevel(3);
             break;
         case 4:
             Vendas v1 = new Vendas();
             f.setFuncionario(v1);
+            f.setAccessLevel(4);
             break;
         }
         return f;

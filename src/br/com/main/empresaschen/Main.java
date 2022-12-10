@@ -10,11 +10,16 @@ package br.com.main.empresaschen;
 
 import br.com.employee.empresaschen.Diretor;
 import br.com.employee.empresaschen.Funcionario;
+import br.com.modules.empresaschen.ConsoleColors;
 import br.com.modules.empresaschen.GeraFuncionario;
+import br.com.modules.empresaschen.MainMenu;
 
 public class Main {
     public static void main(String[] args) {
-        GeraFuncionario teste = new GeraFuncionario();
-        Funcionario coco = teste.novoFuncionario();
+        Funcionario f1 = null;
+
+        MainMenu mainMenu = new MainMenu();
+        mainMenu.mainMenuAction();
+
     }
 }

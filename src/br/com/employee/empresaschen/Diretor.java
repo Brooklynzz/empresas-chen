@@ -15,9 +15,10 @@ public class Diretor extends Funcionario implements Autenticador {
         if (this.senha == senha) {
             autenticado = true;
             System.out.println(ConsoleColors.GREEN + "Autenticado!" + ConsoleColors.RESET);
+        } else {
+            autenticado = false;
+            System.out.println(ConsoleColors.RED + "Não Autenticado!" + ConsoleColors.RESET);
         }
-        autenticado = false;
-        System.out.println(ConsoleColors.RED + "Não Autenticado!" + ConsoleColors.RESET);
         return autenticado;
     }
 
